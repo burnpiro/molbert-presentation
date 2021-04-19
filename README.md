@@ -1,15 +1,16 @@
-# [RevealJS](https://revealjs.com/) presentation template [Demo](https://burnpiro.github.io/presentation-template/#/)
+## Presentation: "Using Transformers to produce breakthroughs in medicine" [(Web version)](https://burnpiro.github.io/molbert-presentation)
 
-This presentation template is using RevealJS library with additional plugins:
+#### Generated using [Presentation Template](https://github.com/burnpiro/presentation-template)
 
-- [`RevealNotes`](https://revealjs.com/speaker-view/) - Speaker notes, Author: Hakim El Hattab
-- [`RevealMarkdown`](https://revealjs.com/markdown/) - Markdown support, Author: Hakim El Hattab
-- [`RevealHighlight`](https://revealjs.com/code/) - Code syntax highlighting, Author: Hakim El Hattab
-- [`RevealMath`](https://revealjs.com/math/) - Latex support, Author: Hakim El Hattab
-- [`RevealZoom`](https://revealjs.com/plugins/#built-in-plugins) - Alt + click zoom, Author: Hakim El Hattab
-- [`RevealMenu`](https://github.com/denehyg/reveal.js-menu) - Latex support, Author: Greg Denehy
-- [`RevealPointer`](https://github.com/burnpiro/reveal-pointer) - Mouse pointer, Author: Kemal Erdem
-- [`RevealDrawer`](https://github.com/burnpiro/reveal-drawer) - Drawing board, Author: Kemal Erdem
+#### TL;DR
+
+In last year, there was an increase in the use of transformers in almost every field of ML. One of those fields is Medicine, where the introduction of AlphaFold2 during the CASP14 competition took all the headlines. AlphaFold2 managed to beat the competition by a huge margin and in an option of many, "solved the protein folding problem". 
+
+![](./assets/alpha-score.jpg)
+
+Google Brain team still didn't release the paper on this model but AlphaFold2 was not the only transformer model which aims to help with biological/chemical problems. Another example of transformer usage in medicine is MolBERT. This BERT-like model, presented on NeurIPS 2020 managed to beat 6 SOTAs from MoleculeNet (set of benchmarks) by learning representation of the molecules using SMILE language. Important thing was that MolBERT was trained using just 2 GPUs which is achievable by a small size company and doesn't require the resources of giants like Google.
+
+![](./assets/molbert.png)
 
 
 ## License
