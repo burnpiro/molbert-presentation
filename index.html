@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="author" content="Kemal Erdem">
 
-  <title>Presentation Template by Kemal Erdem</title>
+  <title>Using Transformers to produce breakthroughs in medicine. by Kemal Erdem</title>
 
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
@@ -21,45 +21,221 @@
 <div class="reveal">
   <div class="slides">
     <section>
-      <h2>Presentation Template</h2>
-      <small>Authors...</small>
+      <h2>Using Transformers to produce breakthroughs in medicine</h2>
+      <small>Author: <a href="https://erdem.pl">Kemal Erdem</a></small>
     </section>
     <section>
-      <h2>Presentation pointer</h2>
-      <h5>("Q" for pointer)</h5>
-      <a href="https://github.com/burnpiro/reveal-pointer">Check plugin's page for details</a>
+      <span class="heading-secondary">Where is a problem?</span>
+      <p class="fragment">There is no problem...</p>
+      <p class="fragment">When you have unlimited resources and time</p>
     </section>
     <section>
-      <h2>Drawing board </h2>
-      <h5>("T" to toggle drawing board)</h5>
-      <p class="small">("D" to toggle drawing)</p>
-      <p class="small">("Ctrl + z" to remove last line)</p>
-      <p class="small">"1", "2", "3", "4" to change colors<br/>
-        (depends on your color list, if you have 5 colors then 1,2,3,4,5 etc)</p>
-      <a class="small" href="https://github.com/burnpiro/reveal-drawer">Check plugin's page for details</a>
+      <span class="heading-secondary">Analyzing Protein Structure x 200mln</span>
+      <img src="assets/protein-mapping.jpg" class="r-stretch">
+      <figure>
+        <figcaption>Figure 1: X-ray crystallography.<br/> Alberts B, Johnson A, Lewis J, et al. <a href="https://www.ncbi.nlm.nih.gov/books/NBK26820/" target="_blank">Molecular Biology of the Cell. 4th edition.</a> Garland Science; 2002</figcaption>
+      </figure>
     </section>
     <section>
-      <h2>Slide 1</h2>
-      <p class="fragment">
-        ABC
-        $$
-        L_{a}T_{e}X
-        $$
-      </p>
-      <pre><code data-trim data-noescape>
-(def lazy-fib
-  (concat
-   [0 1]
-   ((fn rfib [a b]
-        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-  </code></pre>
+      <span class="heading-secondary">NMR Spectroscopy</span>
+      <img src="assets/nmr-spectroscopy.jpg" class="r-stretch">
+      <figure>
+        <figcaption>Figure 1: NMR spectroscopy, measure a distance between hydrogen atoms in the structure.<br/> Alberts B, Johnson A, Lewis J, et al. <a href="https://www.ncbi.nlm.nih.gov/books/NBK26820/" target="_blank">Molecular Biology of the Cell. 4th edition.</a> Garland Science; 2002</figcaption>
+      </figure>
+    </section>
+    <section>
+      <span class="heading-secondary">What AlphaFold2 did?</span><br/>
+      <img src="assets/alpha-score.jpg" class="r-stretch">
+      <figure>
+        <figcaption>Figure 1: CASP14 Scores.<br/><a href="https://www.nature.com/articles/d41586-020-03348-4" target="_blank">DeepMind’s AI makes gigantic leap in solving protein structures</a> Nature; 30 Nov 2020</figcaption>
+      </figure>
+    </section>
+    <section>
+      <span class="heading-secondary">GDT </span>
+      <img src="assets/proteins.gif" class="r-stretch">
+      <figure>
+        <figcaption>Figure 1: <a href="https://en.wikipedia.org/wiki/Global_distance_test">Global Distance Test</a> example.<br/><a href="https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology" target="_blank">High Accuracy Protein Structure Prediction Using Deep Learning</a> DeepMind; 2020</figcaption>
+      </figure>
+    </section>
+    <section>
+      <span class="heading-secondary">AlphaFold2</span>
+      <img src="assets/alphafold2.webp" class="r-stretch">
+      <figure>
+        <figcaption>Figure 1: An overview of the main neural network model architecture.<br/><a href="https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology" target="_blank">High Accuracy Protein Structure Prediction Using Deep Learning</a> DeepMind; 2020</figcaption>
+      </figure>
+      <p class="small">Trained on ~170k protein structures from protein data bank<br/> 128 TPUv3 cores for over a "few weeks"</p>
+    </section>
+    <section>
+      <span class="heading">MoleculeNet</span>
+      <figure style="width: 120%; margin-left: -20%">
+        <img src="assets/MoleculeNet.png" style="width: 120%; max-width: 120%">
+        <figcaption style="padding-left: 20%">Figure 1: Tasks in different datasets focus on different levels of properties of molecules.<br/> <a href="https://arxiv.org/pdf/1703.00564.pdf" target="_blank">MoleculeNet: A Benchmark for Molecular
+          Machine Learning</a></figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>MolBERT</h2>
+      <figure>
+        <img src="assets/molbert.png">
+        <figcaption>Figure 2: Diagram of MOLBERT, <a href="https://arxiv.org/pdf/2011.13230.pdf">Molecular representation learning with language
+          models and domain-relevant auxiliary tasks</a></figcaption>
+      </figure>
+    </section>
+    <section>
+      <h4 class="heading-secondary">What is <a href="https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system">SMILES</a>?</h4>
+      <img src="assets/smiles.gif" class="r-stretch">
+      <figure>
+        <figcaption>Figure 3: The generation process of a SMILES string from aspirin, Author: <a href="https://arxiv.org/pdf/2011.13230.pdf">Josep Arús-Pous</a></figcaption>
+      </figure>
+    </section>
+    <section>
+      <h5>Problems touched by MolBERT</h5>
+      <table class="small">
+        <thead>
+        <tr>
+          <td>Dataset</td>
+          <td>Goal</td>
+          <td>Type</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>ESOL</td>
+          <td>How much given compound dissolves in the water?</td>
+          <td>Regression</td>
+        </tr>
+        <tr>
+          <td>FreeSolv</td>
+          <td>How much energy is released when one mole of ions undergoes hydration</td>
+          <td>Regression</td>
+        </tr>
+        <tr>
+          <td>Lipop</td>
+          <td>The value of Lipophilicity - how much a compound dissolves in fats, oils etc.</td>
+          <td>Regression</td>
+        </tr>
+        <tr>
+          <td>BACE</td>
+          <td>Ability to inhibit human β-secretase 1</td>
+          <td>Classification</td>
+        </tr>
+        <tr>
+          <td>BBBP</td>
+          <td>Can a compound penetrate Blood-brain barrier</td>
+          <td>Classification</td>
+        </tr>
+        <tr>
+          <td>HIV</td>
+          <td>Ability to inhibit HIV replication</td>
+          <td>Classification</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h4 class="heading-secondary">Training</h4>
+      <ul>
+        <li>PyTorch Lightning with Hugging Face!</li>
+        <li>85M parameters BERT</li>
+        <li style="font-weight: bold; color: orangered">~40h with only 2 GPUs</li>
+      </ul>
+    </section>
+    <section>
+      <h5>Scores</h5>
+      <table class="small">
+        <thead>
+        <tr>
+          <td>Model</td>
+          <td>ESOL [RMSE]</td>
+          <td>FreeSolv [RMSE]</td>
+          <td>Lipop [RMSE]</td>
+          <td>BACE [AUC-ROC]</td>
+          <td>BBBP [AUC-ROC]</td>
+          <td>HIV [AUC-ROC]</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><a href="https://github.com/deepchem/deepchem/blob/25b9527e1af62797bbd81b1195cfad49d89f1380/deepchem/models/tensorgraph/models/graph_models.py#L639-L907">GC</a></td>
+          <td>---</td>
+          <td>---</td>
+          <td>0.655</td>
+          <td>---</td>
+          <td>0.690</td>
+          <td>0.763</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/deepchem/deepchem/blob/25b9527e1af62797bbd81b1195cfad49d89f1380/deepchem/models/tensorgraph/models/graph_models.py#L23-L185">Weave</a></td>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td>
+          <td>0.806</td>
+          <td>---</td>
+          <td>---</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/deepchem/deepchem/blob/25b9527e1af62797bbd81b1195cfad49d89f1380/deepchem/models/tensorgraph/models/graph_models.py#L910-L1100">MPNN</a></td>
+          <td>0.58</td>
+          <td>1.15</td>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td>
+        </tr>
+        <tr>
+          <td>MOLBERT</td>
+          <td>0.552</td>
+          <td>1.523</td>
+          <td>0.602</td>
+          <td>0.849</td>
+          <td>0.750</td>
+          <td>0.747</td>
+        </tr>
+        <tr style="font-weight: bold">
+          <td>MOLBERT (finetune)</td>
+          <td>0.531</td>
+          <td>0.948</td>
+          <td>0.561</td>
+          <td>0.866</td>
+          <td>0.762</td>
+          <td>0.783</td>
+        </tr>
+        <tr class="fragment">
+          <td><a href="https://github.com/benatorc/OTGNN">ProtoW-L2</a></td>
+          <td>0.594</td>
+          <td>---</td>
+          <td>0.58</td>
+          <td>0.873</td>
+          <td style="font-weight: bold">0.92</td>
+          <td>---</td>
+        </tr>
+        </tbody>
+        <tr class="fragment">
+          <td><a href="https://github.com/yvquanli/TrimNet">TrimNet</a></td>
+          <td>---</td>
+          <td>---</td>
+          <td>---</td>
+          <td style="font-weight: bold">0.878</td>
+          <td>---</td>
+          <td style="font-weight: bold">0.804</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <span class="heading-secondary">What to remember?</span>
+      <ul>
+        <li>Transformers can be used everywhere</li>
+        <li>You no longer have to be Google to make them (maybe?)</li>
+        <li>It's just a start for ML in medical applications</li>
+      </ul>
     </section>
     <section>
       <h2>Thanks</h2>
       <blockquote>"There's no such thing as a stupid question!"</blockquote>
       <p>
-        <small>Authors</small><br/>
-        <small><a href="">Links</a></small><br/>
+        <small>Author: Kemal Erdem</small><br/>
+        <small><a href="https://github.com/burnpiro/molbert-presentation">https://github.com/burnpiro/molbert-presentation</a></small><br/>
       </p>
     </section>
   </div>
@@ -84,13 +260,13 @@
     hash: true,
     controls: true,
     progress: true,
-    slideNumber: false,
+    slideNumber: true,
     overview: true,
     center: true,
     navigationMode: 'default',
     fragmentInURL: false,
     embedded: false,
-    preloadIframes: null,
+    preloadIframes: true,
     autoSlide: 0,
     autoSlideStoppable: true,
     defaultTiming: 120,
